@@ -8,37 +8,31 @@
 public class HelloWorld
 {
 
-    int a = 5;
-    int b = 2;
-    int c = 1;
-    int d = -8;
+    int a=5;
+    int b=-2;
+    int c=1;
+    int d=-8;
 
     public void run() {
-        if (a==5){
-         System.out.println("Success");
-    } else {
-        System.out.println("Failure");    
-    }
-       if (b==2){
-           System.out.println("Success");
-    } else { 
-            System.out.println("Failure");
-    }
-        if (c!=1){
-        System.out.println("Success");
-    } else {
-        System.out.println("Failure");
-    }
-        if (d==-8 && a==4){
-        System.out.println("Success");
-    }else {
-        System.out.println("Failure");
+        int i=0;
+        while (i < 15) {
+            System.out.println("i is " +i+ " but is less than 15");
+            i++;
         }
-    System.out.println("Hello World!");
+        int k=10;
+        while (k > 5) {
+            System.out.println("k is " +k+ " but is greater than 5");
+            k=k-1;
+        }
+        while (a < 10&&b <= 20) {
+            System.out.println("a and b is " +a+ "and" +b+ " but is less than 10 and 20");
+            a=a+1;
+            b=b+1;
+        }
     }
 
     public static void main(String[] args)
-    {        
+    { 
         HelloWorld hw = new HelloWorld();
         hw.run();
     }
